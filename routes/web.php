@@ -12,7 +12,9 @@
 */
 
 Route::group(['middleware' => ['get.menu']], function () {
-    Route::get('/', function () {           return view('coreui.homepage'); });
+
+    Route::get('/', 'HomeController@index');
+    // Route::get('/', function () {           return view('coreui.homepage'); });
 
     Route::group(['middleware' => ['role:user']], function () {
         Route::get('/colors', function () {     return view('coreui.colors'); });

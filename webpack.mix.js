@@ -11,22 +11,23 @@ const mix = require('laravel-mix');
  |
  */
 
-//mix.js('resources/js/app.js', 'public/js')
-//mix.sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/js')
+mix.sass('resources/sass/app.scss', 'public/css');
+mix.copy('resources/sass/main.css', 'public/css');
+mix.copy('resources/sass/menu.css', 'public/css');
+mix.copy('resources/sass/banner.css', 'public/css');
 
 //**************** CSS ******************** 
 //css
 mix.copy('resources/vendors/pace-progress/css/pace.min.css', 'public/css'); //V
 mix.copy('node_modules/@coreui/coreui-chartjs/dist/css/coreui-chartjs.css', 'public/css'); //V
-//main css
-mix.sass('resources/sass/style.scss', 'public/css');
 
 //************** SCRIPTS ****************** 
 // general scripts
-mix.copy('node_modules/pace-progress/pace.min.js', 'public/js');  //V 
-mix.copy('node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js', 'public/js');  //V
+mix.copy('node_modules/pace-progress/pace.min.js', 'public/js'); //V 
+mix.copy('node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js', 'public/js'); //V
 // views scripts
-mix.copy('node_modules/chart.js/dist/Chart.min.js', 'public/js');  //V
+mix.copy('node_modules/chart.js/dist/Chart.min.js', 'public/js'); //V
 
 mix.copy('node_modules/@coreui/coreui-chartjs/dist/js/coreui-chartjs.bundle.js', 'public/js'); //V
 // details scripts

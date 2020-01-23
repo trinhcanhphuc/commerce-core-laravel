@@ -1,5 +1,9 @@
 {
-    "/css/style.css": "/css/style.css",
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/main.css": "/css/main.css",
+    "/css/menu.css": "/css/menu.css",
+    "/css/banner.css": "/css/banner.css",
     "/css/pace.min.css": "/css/pace.min.css",
     "/css/coreui-chartjs.css": "/css/coreui-chartjs.css",
     "/js/pace.min.js": "/js/pace.min.js",
