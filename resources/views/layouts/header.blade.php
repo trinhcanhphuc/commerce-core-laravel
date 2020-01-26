@@ -5,13 +5,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="container">
     <div class="menu-shoex">
-        <div class="row">
+        <div class="row position-relative">
             <div class="col-md-2 logo"><a href="./"><img src="/assets/img/logo/logo.png"></a></div>
             <div class="col-md-9">
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="./" title="Trang chủ"><span>Home</span></a></li>
-                        <li class="nav-item"><span class="nav-click"><i></i></span><a href="./all-shoes.html" title="All shoes"><span>All shoes</span></a>
+                        <li class="nav-item"><a href="/" title="Trang chủ"><span>Home</span></a></li>
+                        <li class="nav-item"><span class="nav-click" onclick="$('.nav-submenu').toggle()"><i></i></span><a href="/all-shoes" title="All shoes"><span>All shoes</span></a>
                             <ul class="nav-submenu">
                                 <div class="catemenu">
                                     <div><a href="./coffee.html" title="COFFEE">COFFEE</a></div><div><a href="./cafein-midsole.html" title="CAFEIN MIDSOLE ">CAFEIN MIDSOLE </a></div>
@@ -19,7 +19,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="catemenu">
                                     
                                 </div>	
-                                                    
                             </ul>
                         </li>
                         <!--
@@ -38,11 +37,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         -->
                         <li class="nav-item"><a href="./gioi-thieu.html" title="About us"><span>About US</span></a></li>
                     </ul>
-                <div class="nav-mobile"></div></nav>
+                <div class="nav-mobile" onclick="$('.nav-list').toggle()"></div></nav>
             </div>
 
             
-            <div class="colmd2">
+            <div class="colmd2 position-absolute">
                 <div class="add-cart">
                     <!--<span><a href=""><i class="fa fa-user"></i></a></span>-->
                     <span class="shoppingcart hidden-xs hidden-sm hidden-md">

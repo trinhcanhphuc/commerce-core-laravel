@@ -14,6 +14,8 @@
 Route::group(['middleware' => ['get.menu']], function () {
 
     Route::get('/', 'HomeController@index');
+    Route::get('/all-shoes', 'ShoesController@index');
+    Route::get('/shoes/{name}', 'ShoesController@show')->name('shoes.show');;
     // Route::get('/', function () {           return view('coreui.homepage'); });
 
     Route::group(['middleware' => ['role:user']], function () {

@@ -111,7 +111,7 @@
     margin: 0px -7px;
     width: 48px;
     height: 48px;
-    background: url("../assets/img/bullet.png") left top;
+    background: url("../assets/img/banner/bullet.png") left top;
     float: left;
     position: relative;
 }
@@ -136,7 +136,7 @@
     z-index: 60;
     width: 1.1em;
     height: 1.6em;
-    background-image: url("../assets/img/arrows.png");
+    background-image: url("../assets/img/banner/arrows.png");
     margin-right: 100px;
 }
 
@@ -175,14 +175,14 @@
 
 #wowslider-container1 .ws_pause {
     background-size: 100%;
-    background-image: url("../assets/img/pause.png");
+    background-image: url("../assets/img/banner/pause.png");
     margin-right: 100px;
     margin-top: -500px;
 }
 
 #wowslider-container1 .ws_play {
     background-size: 100%;
-    background-image: url("../assets/img/play.png");
+    background-image: url("../assets/img/banner/play.png");
 }
 
 #wowslider-container1 .ws_pause:hover,
@@ -436,12 +436,12 @@
         z-index: 60;
         width: 1.1em;
         height: 1.6em;
-        background-image: url("../assets/img/arrows.png");
+        background-image: url("../assets/img/banner/arrows.png");
         margin-right: 10px;
     }
     #wowslider-container1 .ws_pause {
         background-size: 100%;
-        background-image: url("../assets/img/pause.png");
+        background-image: url("../assets/img/banner/pause.png");
         margin-right: 10px;
         margin-top: -100px;
         bottom: 2em;

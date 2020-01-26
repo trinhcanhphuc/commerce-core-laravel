@@ -5,3 +5,9 @@
  */
 
 require('./bootstrap');
+
+$(".products-item-img img").hover(function() {
+    var dataAltSrc = $(this).attr("src");
+    $(this).attr("src", $(this).attr("data-alt-src"));
+    $(this).attr("data-alt-src", dataAltSrc);
+});
