@@ -6,7 +6,7 @@ use DB, Request;
 
 use App\Services\ShoeService;
 
-class ShoesController extends Controller
+class ShoeTypesController extends Controller
 {
 
     protected $shoe_service;
@@ -30,10 +30,11 @@ class ShoesController extends Controller
      */
     public function index()
     {
+        $allShoeTypes = $this->shoe_service->getByName('');
         $shoeTypes = $this->shoe_service->getByName('');
         $shoes = $this->shoe_service->getShoesByType($shoeTypes);
       
-        return view('shoes.index', compact('shoeTypes', 'shoes'));
+        return view('shoe_types.index', compact('allShoeTypes', 'shoes'));
     }
 
     /**
@@ -43,7 +44,11 @@ class ShoesController extends Controller
      */
     public function show($name)
     {
-        return view('shoes.show');
+        $allShoeTypes = $this->shoe_service->getByName('');
+        $shoeTypes = $this->shoe_service->getByName($name);
+        $shoes = $this->shoe_service->getShoesByType($shoeTypes);
+        
+        return view('shoe_types.index', compact('allShoeTypes', 'shoes'));
     }
 
 }

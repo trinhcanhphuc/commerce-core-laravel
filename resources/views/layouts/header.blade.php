@@ -14,7 +14,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li class="nav-item"><span class="nav-click" onclick="$('.nav-submenu').toggle()"><i></i></span><a href="/all-shoes" title="All shoes"><span>All shoes</span></a>
                             <ul class="nav-submenu">
                                 <div class="catemenu">
-                                    <div><a href="./coffee.html" title="COFFEE">COFFEE</a></div><div><a href="./cafein-midsole.html" title="CAFEIN MIDSOLE ">CAFEIN MIDSOLE </a></div>
+                                    @foreach ($allShoeTypes as $shoeType)
+                                        <div>
+                                            <a href="/shoe-types/{{$shoeType->name}}" title="{{strtoupper($shoeType->name)}}">{{strtoupper($shoeType->name)}}</a>
+                                        </div>
+                                        {{-- <div>
+                                            <a href="./cafein-midsole.html" title="CAFEIN MIDSOLE ">CAFEIN MIDSOLE </a>
+                                        </div> --}}
+                                    @endforeach
                                 </div>	
                                 <div class="catemenu">
                                     
