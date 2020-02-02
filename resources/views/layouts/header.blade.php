@@ -16,11 +16,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="catemenu">
                                     @foreach ($allShoeTypes as $shoeType)
                                         <div>
-                                            <a href="/shoe-types/{{$shoeType->name}}" title="{{strtoupper($shoeType->name)}}">{{strtoupper($shoeType->name)}}</a>
+                                            <a href="/shoe-types/{{$shoeType->name}}" title="{{strtoupper($shoeType->full_name)}}">{{strtoupper($shoeType->full_name)}}</a>
                                         </div>
-                                        {{-- <div>
-                                            <a href="./cafein-midsole.html" title="CAFEIN MIDSOLE ">CAFEIN MIDSOLE </a>
-                                        </div> --}}
                                     @endforeach
                                 </div>	
                                 <div class="catemenu">
